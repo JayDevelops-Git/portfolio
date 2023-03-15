@@ -4,9 +4,11 @@
     /* Adds padding on inside of elements */
     box-sizing: border-box;
 }
+
 /* Set html and body height to be the same size */
 html,body{
-    height: 100%
+    height: 100%;
+    width: 100%;
 }
 
 html {
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-    background-image: url(./assets/purpleBackground.png);
+    background-image: url(./assets/backgrounds/darkGrey/low-poly-grid-haikei.svg);
     height: 100%;
     position: absolute;
     background-attachment: fixed;
@@ -23,12 +25,18 @@ body {
     background-size: cover;
 }
 
+
+body {
+    background-color: var(--primary-color);
+}
 :root{
     
-    --main-color: #1C0145;
-    --secondary-color: white;
-    --tertiary-color: #5800ff;
-    --accent-color: #7B3999;
+    --primary-color: #2a2a2a;
+    --secondary-color: #333333;
+    --tertiary-color: #DDDDDD;
+    --quaternary-color: #FFFFFF;
+    --accent-color: #4bb871;
+    --hover-color: #3f9a5f;
 }
 
 /* Custom fonts */
@@ -49,11 +57,20 @@ body {
     src: url(./assets/fonts/Ubuntu-Regular.ttf);
 }
 
+@font-face {
+    font-family: "UbuntuM";
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+
 
 section {
     padding: 5%;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: 0 auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 3em;
 }
  
 h2 {
@@ -77,6 +94,7 @@ h3 {
     position: fixed;
     backdrop-filter: blur(6px);
     overflow: hidden;
+    font-weight: 700;
 }
 
 .logo {
@@ -90,7 +108,7 @@ h3 {
 }
 
 .logo img:hover {
-    filter: invert(26%) sepia(63%) saturate(1148%) hue-rotate(248deg) brightness(50%) contrast(93%);
+    filter: invert(65%) sepia(16%) saturate(1500%) hue-rotate(88deg) brightness(95%) contrast(81%);
 }
 
 .links {
@@ -109,18 +127,20 @@ h3 {
     padding: 10px;
     overflow: hidden;
     float: left;
-    
 }
 
 .links a {
-    color: var(--secondary-color);
+    color: var(--accent-color);
     text-align: center;
     padding: 0px 25px;
     text-decoration: none;
 }
 
 .links a:hover {
-    color: var(--accent-color);
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    color: var(--hover-color);
 }
 
 .socials {
@@ -135,16 +155,29 @@ h3 {
 }
 
 i {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .fa-linkedin-square:hover {
-    color:var(--accent-color);
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    color:var(--hover-color);
 }
 
 
 .fa-github:hover {
-    color:var(--accent-color);
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    color:var(--hover-color);
+}
+
+.fa-envelope:hover {
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    color:var(--hover-color);
 }
 
 /* Home Page */
@@ -157,75 +190,157 @@ i {
 
 .brief {
     margin-top: 15vh;
+    width: 100%;
     text-align: left;
-    font-family:"DeathStar", sans-serif;
+    font-family:"UbuntuM", sans-serif;
     display: flex;
     flex-direction: column;
-    color: var(--secondary-color);
 }
 
 .brief h1 {
-    font-size: 10vh;
-    float: left;
+    font-size: 6.5em;
+    display: inline;
+    color: var(--quaternary-color);
 }
 
 .brief h1::first-letter {
-    font-size: 15vh;
+    font-size: 8.5rem;
 }
 
 .brief h3 {
     font-family: UbuntuLI;
-    font-size: 4vh;
+    font-size: 2.5rem;
     max-width: 55vw;
+    color: var(--tertiary-color);
+    border-left: 2px solid;
+    border-color: var(--accent-color);
 }
 
 .ctas {
-    text-align: center;
-    display: flex;
+    padding-top: 3%;
 }
 
-.ctas button {
-    min-width: 5vh;
-    padding: 2vh;
-    font-size: 1rem;
+.btn{
     border: none;
-    margin: 1rem;
-    background-color: var(--secondary-color);
-    color: mai;
-    border-radius: 0.5rem;
-    background: linear-gradient(to right, var(--accent-color) 2.2vw, var(--secondary-color) 0%);
-    text-align: left;
+	font-family: 'UbuntuR';
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 10px 0px 0px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
 
-.ctas button:hover {
-    color: var(--accent-color);
-    cursor: pointer;
+.btn:before {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* CV Button */
+.btn-1 {
+	background: var(--accent-color);
+	color: var(--tertiary-color);
+}
+
+.btn-1:hover {
+	background: var(--hover-color)
+}
+
+.btn-1:active {
+	background: #2980b9;
+	top: 2px;
+}
+
+.btn-1:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+
+.btn-sep {
+	padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+	background: rgba(0,0,0,0.15);
+}
+
+.icon-pdf:before {
+	content: "\f1c1";
+}
+
+.sectionEnd {
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    left: 50%;
+    padding-bottom: 2%;
+}
+
+.fa-circle-down {
+    font-size: 3rem;
+}
+
+.fa-circle-down:hover {
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+    color: var(--hover-color)
 }
 
 .portrait {
     position: absolute;
-    height: 100vh;
-    left: 55vw;
-    bottom: 0px;
+    height: 60vh;
+    left: 60%;
+    bottom: 25vh;
     z-index: -1;
 }
 
 .introduction {
-    color: var(--secondary-color);
-    background-color: var(--main-color);
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
+    border-color: var(--quaternary-color);
+    border-style: solid;
 }
 
 .introduction h1 {
     text-align: center;
-    font-size: 8vh;
-    font-family: "DeathStar", sans-serif;
+    font-size: 5rem;
+    font-family: "UbuntuR" , sans-serif;
 }
 
 .introduction p {
     font-family: UbuntuL;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: 2vh;
     padding-left: 15px;
     padding-bottom: 15px;
