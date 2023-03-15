@@ -96,17 +96,15 @@ h3 {
     overflow: hidden;
     font-weight: 700;
 
+    padding-top: 0.5rem;
+
     justify-content: center;
 }
 
 .logo {
     display: flex;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 3%;
+    padding-left: 5vw;
 
-    position: absolute;
-    left: 0;
 }
 
 .logo img {
@@ -120,11 +118,9 @@ h3 {
 .links {
     display: flex;
     flex-direction: row;
-    margin-top: 0.3rem;
-    margin-left: 3rem;
+    margin: 0 auto;
     font-size: 1.2rem;
     font-family: UbuntuL;
-
     justify-content: center;
 }
 
@@ -152,10 +148,8 @@ h3 {
 }
 
 .socials {
-    margin-top: 0.3rem;
-    right:0;
-    position: fixed;
     padding-right: 5vw;
+    overflow: hidden;
 }
 
 .socials a {
@@ -336,7 +330,7 @@ strong::first-letter {
     color: var(--tertiary-color);
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    border-color: var(--quaternary-color);
+    border-color: var(--accent-color);
     border-style: solid;
 }
 
