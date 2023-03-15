@@ -95,12 +95,18 @@ h3 {
     backdrop-filter: blur(6px);
     overflow: hidden;
     font-weight: 700;
+
+    justify-content: center;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 5vw;
+    margin-top: 5px;
+    margin-left: 3%;
+
+    position: absolute;
+    left: 0;
 }
 
 .logo img {
@@ -112,12 +118,14 @@ h3 {
 }
 
 .links {
-    display: inline-block;
+    display: flex;
     flex-direction: row;
     margin-top: 0.3rem;
     margin-left: 3rem;
     font-size: 1.2rem;
     font-family: UbuntuL;
+
+    justify-content: center;
 }
 
 .links li {
