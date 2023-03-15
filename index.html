@@ -11,47 +11,51 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/57c3b1eaf8.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </head>
-<div class="navbar">
+<header class="navbar">
     <a class="logo" href="#home">
         <img src="./assets/newLogo.png" alt="jc">
     </a>
-    <div class="links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact-me">Contact</a></li>
-    </div>
+    <nav class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact</a>
+    </nav>
     <div class="socials">
         <a href="https://www.linkedin.com/in/jay-canoville-4769a1147/" target="_blank">
-            <i class="fa fa-linkedin-square" style="font-size:40px"></i>
-        </a>
-        
+            <i class="fa fa-linkedin-square"></i></a>
         <a href="https://github.com/JayDevelopsGit" target="_blank">
-            <i class="fa fa-github" style="font-size:40px"></i>
-        </a>
-        
+            <i class="fa fa-github"></i></a>
         <a href="mailto:jaydevelops@outlook.com" target="_blank">
-            <i class="fa fa-envelope" style="font-size:40px"></i>
-        </a> 
+            <i class="fa fa-envelope"></i></a> 
     </div>
-</div>
-    
+    <button class="hamburger" onclick="mobileMenu()">
+        <div class="bar"></div>
+    </button>
+</header>
+
 </div>
 <body>
+    <nav class="mobile-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact</a>
+    </nav>
     <section id="home" class="front-page">
         <div class="brief">
+            <img src="./assets/portraits/finalPortrait.png" alt="Jay Canoville Portrait">
             <h1><strong>J</strong>ay <strong>C</strong>anoville</h1>
-            <h3>&nbspComputer Science Student</h3>
+            <h2>Aspiring Software Developer</h2>
             <div class="ctas">
                 <button class="btn btn-1 btn-sep icon-pdf" onclick="window.open('./assets/Jay Canoville CV.pdf','_blank')">
                     View CV</button>
-
             </div>
             <div class="sectionEnd">
                 <a href="#about"><i class="fa-regular fa-circle-down"></i></a>
             </div>
-            <img class="portrait" src="./assets/portraits/finalPortrait.png" alt="Jay Canoville Portrait">
         </div>
     </section>
 
