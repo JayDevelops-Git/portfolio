@@ -203,7 +203,7 @@ i {
     color: var(--quaternary-color);
 }
 
-.brief h1::first-letter {
+strong::first-letter {
     font-size: 8.5rem;
 }
 
