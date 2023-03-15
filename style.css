@@ -172,7 +172,7 @@ i {
 	transition: all 0.2s;
     color:var(--hover-color);
 }
-
+/* Test */
 .fa-envelope:hover {
     -webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
