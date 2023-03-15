@@ -6,4 +6,8 @@ window.onload = function() {
         hamburger.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
     });
+
+    mobile_menu.addEventListener('click', function(){
+        mobile_menu.classList.toggle('is-active');
+    })
 } 
