@@ -128,7 +128,10 @@ b {
 }
 
 .logo img:hover, .logo img:active {
-    filter: invert(65%) sepia(16%) saturate(1500%) hue-rotate(88deg) brightness(95%) contrast(81%);
+    filter: invert(57%) sepia(53%) saturate(434%) hue-rotate(88deg) brightness(97%) contrast(91%);
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
 .links {
@@ -256,12 +259,11 @@ i {
     width: 100%;
     min-height: 40vh;
     display: block;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    background-color: #2a2a2aef;
     padding-top: 15vh;
     transition: 0.5s;
-    border: var(--primary-color);
-    border-style: solid;
+    border: var(--accent-color);
+    border-style: none none solid none;
 
     z-index: 99;
 }
@@ -408,7 +410,7 @@ strong::first-letter {
 }
 
 .fa-circle-down {
-    font-size: min(7vw, 170px);
+    font-size: min(5vw, 100px);
 }
 
 .fa-circle-down:hover, .fa-circle-down:active {
