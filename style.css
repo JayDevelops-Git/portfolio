@@ -844,7 +844,7 @@ strong::first-letter {
     }
 }
 
-/* Mobile rotation scaling fixes - NOT COMPLETE */
+/* Mobile rotation scaling fixes*/
 @media screen and (orientation:landscape) and  (max-height: 400px){
 
     .navbar {
@@ -857,5 +857,33 @@ strong::first-letter {
 
     .footerCtas p{
         line-height: 1rem;
-    }   
+    }
+
+    .projectSection {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 5vw auto;
+        height: 130vh;
+        width: 85vw;
+    }
+
+    .title {
+        font-family: UbuntuM;
+        font-size: 5.5vw;
+        line-height: 5vw;
+    
+        margin: 1vw 0;
+    }
+
+    .desc {
+        font-family: UbuntuL;
+        font-size: 2vw;
+    }
+    
+    .tags p {
+        font-size: 2vw;
+    }
 }
