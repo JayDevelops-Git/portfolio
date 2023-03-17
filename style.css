@@ -90,6 +90,7 @@ h2 {
     font-family: UbuntuLI;
     font-size: 1.7rem;
     color: var(--tertiary-color);
+    line-height: 2rem;
 }
 
 h3 {
@@ -106,7 +107,7 @@ b {
 
 .navbar {
     width: 100%;
-    height: 7vh;
+    height: 5rem;
     flex-direction: row;
     display: flex;
     position: fixed;
@@ -116,7 +117,7 @@ b {
     font-weight: 700;
     background-color: var();
     padding: 0.4vh 3vw 0 3vw;
-    z-index: 98;
+    z-index: 100;
 }
 
 .logo {
@@ -126,13 +127,13 @@ b {
 
 .logo img {
     height: 2.5rem;
+    -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
 .logo img:hover, .logo img:active {
     filter: invert(57%) sepia(53%) saturate(434%) hue-rotate(88deg) brightness(97%) contrast(91%);
-    -webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	transition: all 0.2s;
 }
 
 .links {
@@ -275,23 +276,24 @@ i {
     max-width: 25vw;
     margin: 1vh auto;
     text-align: center;
-    padding: 4vh 1vw;
+    padding: 3vh 1vw;
     font-size: 2rem;
     font-family: UbuntuL;
 
-    color: var(--accent-color);
+    color: var(--tertiary-color);
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .mobile-links a:hover, .mobile-links a:active {
     color: var(--accent-color);
-    transition: 0.2s;
 }
 
 .mobile-links.is-active {
     display: none;
     top: -7vh;
 }
+
 /* Home Page */
 
 
@@ -361,7 +363,7 @@ strong::first-letter {
 }
 
 .ctas {
-    padding-top: 3%;
+    padding: 1.5vh 0;
 }
 
 .btn{
@@ -374,6 +376,7 @@ strong::first-letter {
 	padding: 25px 80px;
 	display: inline-block;
 	margin: 15px 10px 0px 0px;
+    border-radius: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -431,6 +434,7 @@ strong::first-letter {
 
 .btn-sep:before {
 	background: rgba(0,0,0,0.15);
+    border-radius: 1rem;
 }
 
 .icon-pdf:before {
@@ -446,12 +450,12 @@ strong::first-letter {
 
 .fa-circle-down {
     font-size: min(5vw, 100px);
-}
-
-.fa-circle-down:hover, .fa-circle-down:active {
     -webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
+}
+
+.fa-circle-down:hover, .fa-circle-down:active {
     color: var(--accent-color);
     transform: scale(1.2);
 }
@@ -462,7 +466,7 @@ strong::first-letter {
     border-radius: 1rem;
     border-color: var(--accent-color);
     border-style: solid;
-    /* Must be same as navbar height*/
+    /* Avoids navbar (no mobile support) */
     margin-top: 3.4rem;
 }
 
@@ -486,6 +490,11 @@ strong::first-letter {
     margin-bottom: 2vh;
 }
 
+#skills h1 {
+    /* Avoids navbar (no mobile support) */
+    margin-top: 2.5rem;
+}
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -505,6 +514,8 @@ strong::first-letter {
     height: 25vh;
     width: 25vh;
     max-width: 20vw;
+
+    transition: 0.2s;
 }
 
 .imgFrame img {
@@ -516,6 +527,7 @@ strong::first-letter {
 
 .imgFrame:hover {
     transform: scale(1.05);
+    background-color: #4bb87111;
 }
 
 .darken {
@@ -524,6 +536,118 @@ strong::first-letter {
 
 .brighten {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg) brightness(103%) contrast(101%);
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects h1 {
+    /* Avoids navbar (no mobile support) */
+    margin-top: 2rem;
+}
+
+.projectSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: auto 2vw;
+    background-color: var(--primary-color);
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-radius: 1rem;
+    color: var(--quaternary-color);
+    height: 70vh;
+    width: 40vw;
+    text-decoration: none;
+    text-align: center; 
+
+    position: relative;
+    overflow:hidden;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+.thumbnail {
+    max-height: 50%;
+    border-style: none none solid none;
+    border-color: var(--accent-color);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    align-self: center;
+    width: 100%;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.title {
+    font-family: UbuntuM;
+    font-size: 5.5vh;
+    line-height: 5vh;
+
+    margin: 1vh 0;
+}
+
+.title a {
+    text-decoration: none;
+    color: var(--quaternary-color);
+}
+
+.desc {
+    font-family: UbuntuL;
+    font-size: 2vh;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.tags p {
+    font-family: UbuntuL;
+    font-size: 2vh;
+    background-color: var(--secondary-color);
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-radius: 1rem;
+    margin: 0.5rem 0.5rem;
+    padding: 0 0.5rem;
+    transition: 0.2s;
+}
+
+.tags p:hover {
+    scale: 1.1;
+    opacity: 0.8;
+}
+
+.project .socials {
+    margin: auto;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 .footerCtas {
@@ -563,6 +687,7 @@ strong::first-letter {
 
 .mobileFooter p {
     color: var(--accent-color);
+    margin-top: 1vh;
     margin-bottom: 1vh;
     font-weight: 700;
 }
@@ -610,7 +735,7 @@ strong::first-letter {
 /* Media Queries */
 
 /* Medium / Tablet */
-@media screen and (max-width: 965px){
+@media screen and (max-width: 995px){
 
     /* ---  Body  --- */
     section {
@@ -695,6 +820,17 @@ strong::first-letter {
         transform: scale(1);
     }
 
+    .projectSection {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 5vw auto;
+        height: 70vh;
+        width: 85vw;
+    }
+
     .btn-2 {
         display: none;
     }
@@ -702,12 +838,24 @@ strong::first-letter {
     .mobileFooter {
         display: flex;
     }
-
-    
-
     
     .footerCtas .socials {
         display: none;
     }
+}
 
+/* Mobile rotation scaling fixes - NOT COMPLETE */
+@media screen and (orientation:landscape) and  (max-height: 400px){
+
+    .navbar {
+        height: 6vw;
+    }
+
+    .brief h1{
+        font-size: 8vh;
+    }
+
+    .footerCtas p{
+        line-height: 1rem;
+    }   
 }
