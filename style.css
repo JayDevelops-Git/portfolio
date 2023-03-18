@@ -566,7 +566,7 @@ strong::first-letter {
     border-radius: 1rem;
     color: var(--quaternary-color);
     height: 70vh;
-    width: 20vw;
+    width: 45vw;
     text-decoration: none;
     text-align: center; 
 
@@ -575,12 +575,17 @@ strong::first-letter {
     transition: 0.3s;
 }
 
+.repl {
+    border-style: none none solid none;
+    border-color: var(--accent-color);
+}
+
 .project:hover {
     transform: scale(1.05);
 }
 
 .thumbnail {
-    max-height: 50%;
+    height: 50%;
     border-style: none none solid none;
     border-color: var(--accent-color);
     border-radius: 1rem;
@@ -589,8 +594,9 @@ strong::first-letter {
 
 .thumbnail img {
     align-self: center;
+    height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: 0.3s;
 }
 
