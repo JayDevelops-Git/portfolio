@@ -89,7 +89,7 @@ h1 {
 h2 {
     font-family: UbuntuLI;
     font-size: 1.7rem;
-    color: var(--tertiary-color);
+    color: var(--quaternary-color);
     line-height: 2rem;
 }
 
@@ -115,7 +115,7 @@ b {
     -webkit-backdrop-filter: blur(30px);
     overflow: hidden;
     font-weight: 700;
-    background-color: var();
+    background-color: var()b ;
     padding: 0.4vh 3vw 0 3vw;
     z-index: 100;
 }
@@ -461,7 +461,6 @@ strong::first-letter {
 }
 
 .textBox {
-    color: var(--tertiary-color);
     background-color: var(--primary-color);
     border-radius: 1rem;
     border-color: var(--accent-color);
@@ -473,17 +472,19 @@ strong::first-letter {
 .text {
     display: inline-block;
     font-family: "UbuntuL", sans-serif;
-    color: var(--quaternary-color);
+    color: var(--tertiary-color);
     font-size: 2vh;
     margin: 2vh 3vw;
+    font-weight: 600;
 }
 
 .text h1 {
-    color: var(--tertiary-color);
+    color: var(--quaternary-color);
     text-align: left;
     font-size: 4vh;
-    font-family: "UbuntuL" , sans-serif;
+    font-family: "UbuntuM" , sans-serif;
     margin-bottom: 2.5vh;
+    
 }
 
 .text p {
@@ -624,6 +625,7 @@ strong::first-letter {
 .desc {
     font-family: UbuntuL;
     font-size: 2vh;
+    font-weight: 550;
 }
 
 .tags {
