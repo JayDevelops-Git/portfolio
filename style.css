@@ -566,7 +566,7 @@ strong::first-letter {
     border-radius: 1rem;
     color: var(--quaternary-color);
     height: 70vh;
-    width: 40vw;
+    width: 20vw;
     text-decoration: none;
     text-align: center; 
 
@@ -576,7 +576,7 @@ strong::first-letter {
 }
 
 .project:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .thumbnail {
@@ -595,7 +595,7 @@ strong::first-letter {
 }
 
 .thumbnail img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     opacity: 0.8;
 }
 
@@ -791,6 +791,10 @@ strong::first-letter {
         line-height: 4vh;
     }
 
+    #home {
+        margin-top: 3rem;
+    }
+
     .brief img {
         max-width: 30vw;
         max-height: 30vw;
@@ -848,7 +852,7 @@ strong::first-letter {
 @media screen and (orientation:landscape) and  (max-height: 400px){
 
     .navbar {
-        height: 6vw;
+        height: 3rem;
     }
 
     .brief h1{
