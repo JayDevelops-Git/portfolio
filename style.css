@@ -565,7 +565,7 @@ strong::first-letter {
     border-color: var(--accent-color);
     border-radius: 1rem;
     color: var(--quaternary-color);
-    height: 70vh;
+    height: 80vh;
     width: 45vw;
     text-decoration: none;
     text-align: center; 
@@ -579,7 +579,7 @@ strong::first-letter {
     border-style: none none solid none;
     border-radius: 1rem;
     border-color: var(--accent-color);
-    height: 50%;
+    height: 60%;
     overflow: hidden;
 }
 
@@ -588,7 +588,7 @@ strong::first-letter {
 }
 
 .thumbnail {
-    height: 50%;
+    height: 60%;
     border-style: none none solid none;
     border-color: var(--accent-color);
     border-radius: 1rem;
@@ -613,7 +613,7 @@ strong::first-letter {
     font-size: 5.5vh;
     line-height: 5vh;
 
-    margin: 2vh 0;
+    margin: 1.5vh 0;
 }
 
 .title a {
@@ -657,7 +657,7 @@ strong::first-letter {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 
 .footerCtas {
@@ -850,12 +850,12 @@ strong::first-letter {
     }
 
     .repl {
-        height: 65%
+        height: 65%;
     }
 
     .project .socials {
         margin-bottom: 1vh;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .btn-2 {
