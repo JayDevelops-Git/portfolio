@@ -577,7 +577,10 @@ strong::first-letter {
 
 .repl {
     border-style: none none solid none;
+    border-radius: 1rem;
     border-color: var(--accent-color);
+    height: 50%;
+    overflow: hidden;
 }
 
 .project:hover {
@@ -610,7 +613,7 @@ strong::first-letter {
     font-size: 5.5vh;
     line-height: 5vh;
 
-    margin: 1vh 0;
+    margin: 2vh 0;
 }
 
 .title a {
@@ -653,7 +656,8 @@ strong::first-letter {
     bottom: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    margin-bottom: 3vh;
 }
 
 .footerCtas {
@@ -847,6 +851,11 @@ strong::first-letter {
 
     .repl {
         height: 65%
+    }
+
+    .project .socials {
+        margin-bottom: 1vh;
+        font-size: 1.5rem;
     }
 
     .btn-2 {
