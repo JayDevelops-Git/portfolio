@@ -137,7 +137,7 @@ b {
 }
 
 .links {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: -webkit-translate(-50%, -50%);
