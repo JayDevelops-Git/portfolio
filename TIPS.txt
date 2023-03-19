@@ -1,8 +1,0 @@
-<section> for each page
-
-TOPS:
-.yourlabel {tab} - shortcut to create 'yourlabel' div
-
-
---- CSS ---
-@font-face - create custom font family block
